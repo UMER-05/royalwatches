@@ -1,0 +1,209 @@
+body {
+    background-image: url("https://www.transparenttextures.com/patterns/white-wall.png");
+  }
+  
+  .container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/white-wall.png");
+  }
+  
+  .container h1 {
+    width: 100%;
+    text-align: center;
+    padding: 5rem;
+    font-size: 3rem;
+  }
+  
+  /* Grid Container */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 10rem;
+  }
+  
+  /* Grid Item */
+  .grid-item {
+    background-color: #e6e6e6;
+    border: 1px solid #ddd;
+    border-radius: 0.9rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    padding-bottom: 8rem;
+    background-image: url("https://www.transparenttextures.com/patterns/white-wall.png");
+  }
+  
+  .grid-item:hover {
+    filter: drop-shadow(0px 7px 7px rgba(29, 5, 5, 0.69));
+  }
+  
+  /* Image Styling */
+  .grid-item img {
+    width: 100%;
+    display: block;
+  }
+  
+  /* Overlay for Title/Details */
+  .item-overlay {
+    position: absolute;
+    bottom: 8rem;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    transition: opacity 0.3s ease;
+  }
+  
+  @media (max-width: 565px) {
+    html {
+      font-size: 40%;
+    }
+  }
+  
+  /* Price & Sale Tags */
+  .watchPrice {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  
+  .sale {
+    position: absolute;
+    color: red;
+    left: 5px;
+    bottom: 3.2rem;
+    z-index: 2;
+    font-size: 1.3rem;
+  }
+  
+  /* Cart Button */
+  .cart-btn {
+    --width: 8.5rem;
+    --height: 2.8rem;
+    --tooltip-height: 35px;
+    --tooltip-width: 90px;
+    --gap-between-tooltip-to-button: 18px;
+    --button-color: #222;
+    --tooltip-color: #fff;
+    
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    position: relative;
+    text-align: center;
+    border-radius: 0.5em;
+    font-family: "Arial";
+    transition: background 0.7s;
+  }
+  
+  .cart-btn::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    width: var(--tooltip-width);
+    height: var(--tooltip-height);
+    background-color: #282727;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 0.25em;
+    line-height: var(--tooltip-height);
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+    left: calc(50% - var(--tooltip-width) / 2);
+  }
+  
+  .cart-btn::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #555;
+    left: calc(50% - 10px);
+    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+  }
+  
+  .cart-btn::after,
+  .cart-btn::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+  
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cart-btn-wrapper,
+  .text,
+  .icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+  }
+  
+  .text {
+    top: 0;
+    font-size: 1.2rem;
+  }
+  
+  .text,
+  .icon {
+    transition: top 0.5s;
+  }
+  
+  .icon {
+    color: #fff;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .cart-btn:hover {
+    background: #000000;
+  }
+  
+  .cart-btn:hover .text {
+    top: -100%;
+  }
+  
+  .cart-btn:hover .icon {
+    top: 0;
+  }
+  
+  .cart-btn:hover:before,
+  .cart-btn:hover:after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .cart-btn:hover:after {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+  }
+  
+  .cart-btn:hover:before {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+  }
+  
+  .cart-buy-btn-wrapper {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 1rem 0rem;
+  }
+  
