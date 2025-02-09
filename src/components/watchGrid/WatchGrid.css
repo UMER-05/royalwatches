@@ -85,9 +85,9 @@ body {
   .cart-btn {
     --width: 8.5rem;
     --height: 2.8rem;
-    --tooltip-height: 35px;
-    --tooltip-width: 90px;
-    --gap-between-tooltip-to-button: 18px;
+    --tooltip-height: 3.5rem;
+    --tooltip-width: 9rem;
+    --gap-between-tooltip-to-button: 1.8rem;
     --button-color: #222;
     --tooltip-color: #fff;
     
@@ -120,7 +120,7 @@ body {
     content: "";
     width: 0;
     height: 0;
-    border: 10px solid transparent;
+    border: 1rem solid transparent;
     border-top-color: #555;
     left: calc(50% - 10px);
     bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
@@ -169,8 +169,8 @@ body {
   }
   
   .icon svg {
-    width: 24px;
-    height: 24px;
+    width: 2.4rem;
+    height: 2.4rem;
   }
   
   .cart-btn:hover {
