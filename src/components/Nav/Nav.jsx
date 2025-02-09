@@ -6,7 +6,7 @@ function Nav() {
       <>
       <div className='logoWrapper'>
         <img src={logo} className='logo'/>
-        <h1>Royal Watches</h1>
+        <h1 className='logonametext'>Royal Watches</h1>
         </div>
       </>
     )

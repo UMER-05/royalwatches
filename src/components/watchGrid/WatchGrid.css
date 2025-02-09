@@ -62,6 +62,21 @@ body {
       font-size: 40%;
     }
   }
+  @media (max-width: 380px) {
+    html {
+      font-size: 35%;
+    }
+  }
+  @media (max-width: 320px) {
+    html {
+      font-size: 30%;
+    }
+  }
+  @media (max-width: 300px) {
+    html {
+      font-size: 26%;
+    }
+  }
   
   /* Price & Sale Tags */
   .watchPrice {

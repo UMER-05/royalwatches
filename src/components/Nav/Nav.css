@@ -8,3 +8,13 @@
 .logo {
     width: 30rem;
 }
+.logonametext{
+    font-size: 3rem;
+   
+}
+@media (max-width: 400px) {
+    .logonametext {
+      width: 50%;
+      text-align: left;
+    }
+  }
