@@ -53,7 +53,7 @@ const watchesArray = [
     { id: 14, src: watch14, alt: 'Watch 14', title: 'Luxury Class', price:199999 },
     { id: 15, src: watch15, alt: 'Watch 15', title: 'Bright Desire', price: 159999},
     { id: 16, src: watch16, alt: 'Watch 16', title: 'White Class', price:15000 },
-    { id: 17, src: watch17, alt: 'Watch 17', title: 'Diamond with Brown', price:133000 },
+    { id: 17, src: watch17, alt: 'Watch 17', title: 'Order Confirmed', price:133000 },
     { id: 18, src: watch18, alt: 'Watch 18', title: 'Watch 18', price:190000 },
     { id: 19, src: watch19, alt: 'Watch 19', title: 'Eye Catcher', price: 15000},
     { id: 20, src: watch20, alt: 'Watch 20', title: 'Slim W1', price:14000 },
